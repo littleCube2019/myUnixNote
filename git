@@ -1,0 +1,45 @@
+＃ 初始設定
+git config -- global user.name "your name"
+git config -- global user.email "your email"
+
+git config --global alias.縮寫 原指令   ＃用於簡化指令
+＃可在~/.gitconfig 中查看修改
+＝＝＝＝＝＝＝＝＝＝＝＝＝
+＃ 查看
+git status 可看狀態
+git log 可看commit
+gitk 開啟gui
+git branch 顯示所有分支
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝
+＃ 基本本地備份
+git init
+git add .  #add all
+git commit -m "message"
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝
+＃ 遠端推
+基本備份完後
+git remote add var URL
+git push -u var master
+
+URL: repository url
+var: a name
+master: branch name
+
+＃遠端拉
+git clone URL  #first time
+
+git pull URL  
+
+#遇到修改版本問題通常都是沒有先pull就直接push
+＝＝＝＝＝＝＝＝＝＝＝＝＝
+＃ 切換分支
+
+git branch name  建立名為name的分支
+＃不打name會顯示所有分支
+＃ -d 可以刪除分支 (-D 會強制)
+
+git checkout name  切換分支
+
+git merge name 合併分支 
