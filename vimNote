@@ -1,0 +1,8 @@
+<C-x>  	#emmet
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+＃ vim 分割頁面
+<C-w> 	#chage grid of vim
+:sp filename  #make new grid of vim horzontial  (<C-w> + s)
+:vs filename  # ... vertically	(<C-w> + v)
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝

@@ -1,0 +1,3 @@
+#查看硬體
+df  -- check disk
+cat /proc/cpuinfo  --check info
