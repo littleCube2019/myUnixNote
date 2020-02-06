@@ -1,0 +1,44 @@
+＃第一行要加入 #!/bin/bash
+內容可以放bash的指令
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+＃使用：
+
+更改為可執行檔
+chmod u+x file
+
+或是直接用sh使用
+sh file
+
+#加入path
+如果想加入PATH(隨地都可以用)
+暫時
+PATH=$PATH:~/bash的path
+永久
+進入 ~/.bashrc 設定
+
+#想直接使用就要chmod 取得permission
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+＃變數
+$0 表示本隻script
+$1 ,$2, ...表示bashscript吃進去的第n個參數
+
+#讀取變數
+read -p "what you want to say" var
+類似python的var=input("what you want to say")
+之後可用 $var 使用讀入的變數
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+＃迴圈
+for i in $(seq 1 n)
+do 
+...
+done
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+#判斷式
+if [condition];then
+...
+fi  #end
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+
