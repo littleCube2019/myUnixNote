@@ -4,6 +4,8 @@ git config -- global user.email "your email"
 
 git config --global alias.縮寫 原指令   ＃用於簡化指令
 ＃可在~/.gitconfig 中查看修改
+# --unset 可以清除資料,當然也可以從gitconfig中直接改
+
 ＝＝＝＝＝＝＝＝＝＝＝＝＝
 ＃ 查看
 git status 可看狀態
