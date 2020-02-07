@@ -34,7 +34,8 @@ git clone URL  #first time
 
 git pull URL  
 
-#遇到修改版本問題通常都是沒有先pull就直接push
+＃可以用git remote remove var 來刪除已建立的url name
+＃遇到修改版本問題通常都是沒有先pull就直接push
 ＝＝＝＝＝＝＝＝＝＝＝＝＝
 ＃ 切換分支
 

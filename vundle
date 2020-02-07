@@ -1,0 +1,11 @@
+＃好用的vim插件管理器
+
+於.vimrc中寫入Plugin 'xxx'
+再輸入 :PluginInstall 即可安裝
+＊首先要先去找plugin vundle的代碼,網路上搜尋即可
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+＃更新
+:PluginUpdate
+
+其他用法可參考Vundle github

@@ -1,0 +1,8 @@
+＃超好用的自動補全插件
+安裝比較麻煩,照它github 上去做即可
+Plugin 'ycm-core/YouCompleteMe'  #in .vimrc
+＃請使用
+/usr/bin/python ./install.py
+而不要用conda 的 python ！！！  
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+＃基本使用
