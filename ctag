@@ -1,0 +1,13 @@
+＃前置
+安裝
+sudo apt-get install exuberant-ctags
+ 
+使用
+在專案root 下輸入 ctags -R * 會建立類似資料庫的參考表
+-R表示遞迴建立    *表示會對所有檔案
+  
+ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+ ＃操作
+ <C+]> 可以跨檔跳至function definition
+ <C+T> 則是可以回到上一個跳點
+ <c+o> 退回原位 

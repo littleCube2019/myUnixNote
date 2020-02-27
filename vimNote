@@ -6,3 +6,39 @@
 :vs filename  # ... vertically	(<C-w> + v)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+＃ vim 常用快捷鍵
+gg 文件開頭
+GG 文件底
+
+jkhl 上下移動
+＃修改hot key jj to ESC
+$ 跳到行尾
+^ 跳到行首
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+＃trace code 快捷鍵
+gd 可以跳到function definition
+/word 可以找word 按n N 可以上下移動
+% 可以跳到配對括號 
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+#mark
+在normal mode 下可以在某位置按下 m a
+a可以是特定小寫字元,做下標記
+（！如果使用大寫字元,則是跨檔案的標記
+`a 則可以跳到該位置 
+
+輸入:marks 則可以打開buffer 看mark list
+輸入:delmarks x 則可以刪除mark
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+基本操作
+yy : 複製一行
+yn : 複製n行
+y -> d 變剪下
+D : 剪下至行尾
+p : 貼上
+u : undo
+/: search
+%s/word1/word2 : 對所有文件,將word1 替換成 word2
+

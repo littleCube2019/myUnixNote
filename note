@@ -1,4 +1,8 @@
 #!/bin/bash
 
-cat ~/note/$1
-
+if [ contents == $1 ] 
+then
+	ls ~/note | cat
+else
+	cat ~/note/$1
+fi
