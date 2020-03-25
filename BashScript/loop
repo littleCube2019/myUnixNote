@@ -1,0 +1,15 @@
+for _var in _something ;
+do ...;
+done ; 
+
+ex:
+印出當下目錄所有檔案名稱
+for i in *.txt;
+do echo ${f};
+done ;
+
+ex2:
+印出當下目錄所有檔案內容
+for i in *.txt;
+do cat ${f};
+done;

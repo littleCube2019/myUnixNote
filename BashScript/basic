@@ -1,0 +1,9 @@
+> change direct out
+< change direct in
+2> change standard error out
+| pipe
+/dev/null  black hole
+
+ex:
+cat test 2> /dev/null 當錯誤時,錯誤輸出訊息會到黑洞
+cat /dev/null > test  將文件清空而不刪除

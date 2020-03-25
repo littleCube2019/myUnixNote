@@ -1,0 +1,27 @@
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+#判斷式
+if [condition];then
+...
+fi  #end
+
+但盡量不要使用者種statement
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+可以使用指令判斷符號
+;  ||  &&
+
+; 表示並聯statement，可以在同一句寫多行指令
+
+ex:
+cat doc1 ; cat doc2 ; cat doc3
+
+=============================
+
+A && B  表示 A執行成功B
+
+
+A || B  表示 A執行失敗B
+
+
+cat dir || echo "error"

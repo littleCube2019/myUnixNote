@@ -1,0 +1,28 @@
+指令介紹
+autocmd
+可以在讀取、寫入、進入、離開時自動執行 (查看event)
+也有辦法先判別檔案再執行
+因為非常強大,使用時要小心
+==================================================
+語法：
+
+:au[tocmd] [group] {event} {pat} [nested] {cmd}
+[] 表示optional
+{} 表示必填
+
+Vim 的event有
+BufNewFile  #開啟新檔案時
+BufRead  #閱讀檔案時
+BufReadPre #在閱讀檔案之前
+...種類
+
+vim 的 pat 
+可以 *.py 表示所有python file
+也可以用路徑 比如 /vim/src/*.c
+
+範例一：
+:autocmd VimEnter *.html imap < <><LEFT>
+
+注意新開的檔案是BufNewFile :w後再開才是BufRead
+
+ 
