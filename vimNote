@@ -42,3 +42,10 @@ u : undo
 /: search
 %s/word1/word2 : 對所有文件,將word1 替換成 word2
 
+==============================
+! bash cmd 
+可直接執行bash 指令
+例如
+!ls 
+!python main.py
+

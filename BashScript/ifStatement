@@ -5,6 +5,7 @@ if [condition];then
 fi  #end
 
 但盡量不要使用者種statement
+*condition 可以參考conditionalOperation
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -15,7 +16,6 @@ fi  #end
 
 ex:
 cat doc1 ; cat doc2 ; cat doc3
-
 =============================
 
 A && B  表示 A執行成功B
@@ -23,5 +23,12 @@ A && B  表示 A執行成功B
 
 A || B  表示 A執行失敗B
 
+ex1:
+cat dir 2> dev/null || echo "error" #dev/null 是黑洞 , 2> 是錯誤重導,這樣就不會印出錯誤訊息
 
-cat dir || echo "error"
+ex2:
+ [ -d $dir ] && ls $dir   #如果dir 是目錄,就ls它
+#[ -d $var ] 判斷變數是否為目錄,注意左空白、右空白一個都不能少
+#-z 是否為空白
+#-f 是否為檔案
+*其他應用參考conditionalOperation

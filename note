@@ -1,8 +1,15 @@
 #!/bin/bash
 
-if [ contents == $1 ] 
+if [ -z $1 ] 
 then
 	ls ~/note | cat
+	for file in *
+		do 
+		 [ -d $file ] && ls $file | cat 
+	done
+	#印出所有筆記名
 else
-	cat ~/note/$1
+	cat ~/note/$1 2> /dev/null || cat ~/note/BashScript/$1 2> /dev/null || cat ~/note/vimCmd/$1 2> /dev/null || echo "$1 not found"
+	#印出所求檔案,利用||原理依次查找
+	#之後可以改成loop 處理	
 fi

@@ -13,3 +13,16 @@ ex2:
 for i in *.txt;
 do cat ${f};
 done;
+
+=======================================
+
+for _var in {_seq} ....
+
+# 好像版本不對,待查
+ex:
+for n in  {1..5} ; 
+do
+	for alph in {a..z};
+		do echo $n ; echo $alph;
+	done;
+done; 

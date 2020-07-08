@@ -1,0 +1,18 @@
+$PATH  
+環境變數
+是用 ： 分隔多個目錄位置
+可以直接執行那些目錄位置中的程式
+
+比如 xxx:ooo:ppp
+可以直接執行 xxx/python3 
+
+=====================================
+dirname <filepath>
+
+可以回傳該file所在目錄
+
+實用例子
+於bash script中
+basedir=$(dirname "$0")
+可以得到bash script 所在的dir
+

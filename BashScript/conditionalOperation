@@ -1,0 +1,39 @@
+針對關係
+格式：
+[ $a -eq $b ]
+#注意,一格空白都不能漏掉
+
+=     -eq
+!=    -ne
+>     -gt
+<     -lt
+>=    -ge
+<=    -le
+
+#注意,以上符號是可以替換的
+如：[ 1 -eq 1] && echo "hello world "
+等價於
+[ 1 = 1] && echo "hello world "
+
+=====================================================
+針對字串
+格式：
+[ -z $a ]
+# 也是要特別注意括號周圍的空格
+
+-z  is zero?   當字串變數長度為0時回傳true
+-n  is non-zero?  當字串變數有值時回傳true
+單純放變數        當字串為空字串時回傳true  ex: [ $s ]  
+
+====================================================
+針對檔案    
+(參考：檔案類型：http://linux-wiki.cn/wiki/zh-tw/%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5)
+(更多指令參0考：https://www.tutorialspoint.com/unix/unix-basic-operators.htm)
+格式:
+[ -b $file ]
+
+-d  is directory
+-f  is regular file
+-r
+-w
+-x  readable,writable,executable
