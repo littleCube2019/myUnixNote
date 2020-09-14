@@ -15,8 +15,8 @@ sh note xxx  # 可以印出xxx的內容
 ```
 
 ### Example
-![]("1.PNG")  
-![]("2.PNG")  
+![]("/img/1.PNG")  
+![]("/img/2.PNG")  
 
 
 # Personalization
