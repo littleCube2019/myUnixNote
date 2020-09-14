@@ -27,11 +27,15 @@ $$ 表示process id
 #讀取變數
 read -p "what you want to say" var
 類似python的var=input("what you want to say")
-之後可用 $var 使用讀入的變數
+
+* 之後可用 $var 使用讀入的變數
 
 #自訂變數
-var = string
-注意string是不用加引號的
+var=string
+
+* 注意string是不用加引號的
+* 注意 = 兩側是不可以有空格的 
+* 使用一樣是$var
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ＃迴圈
 for i in $(seq 1 n)

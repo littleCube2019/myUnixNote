@@ -1,0 +1,27 @@
+cut -c <n>
+取出字串的第n個字
+
+cut -c <a>,<b>
+取出字串的第a個 與 第b 個字
+
+cut -c <a>-<b>
+取出字串的第a個 ~ 第b個字
+
+cut -c --complement <range>
+取出<range>以外的所有字， <range>可以用上面三種方式表達
+
+* 注意，字是從 1 開始算
+
+#Example
+echo "bash" | cut -c --complement 4 
+結果: ash
+
+============================================================
+
+cut -d <pattern> -f <n>
+以 <pattern>為分割符， 然後取出第n個feild
+
+#Example
+處理tsv , csv 很好用
+
+
